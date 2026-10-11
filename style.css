@@ -1,0 +1,52 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body h2{
+    text-align: center;
+    margin: 30px;
+    color: #5f00cc;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.card{
+    width: 250px;
+    height: 200px;
+    background-color: #ffffffb9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    float: right;
+}
+.card p{
+    text-align: right;
+    font-size: 18px;
+}
+.card p span{
+    font-weight: bold;
+    color: #5f00cc;
+}
+.card a{
+    color: red;
+    font-weight: 600;
+}
+.card a:hover{
+    color: #5f00cc;
+}
+.card a:visited{
+    color: rgb(175, 0, 0);
+}
+body::-webkit-scrollbar,html::-webkit-scrollbar {
+    display: none;
+}

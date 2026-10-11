@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+        iframe::-webkit-scrollbar,body::-webkit-scrollbar,html::-webkit-scrollbar {
+            display: none;
+        }
+        </style>
+</head>
+<body>
+    <iframe src="" id="show" frameborder="0" width="100%"></iframe>
+    <script>
+        const iframe = document.getElementById('show');
+        const urlParams = new URLSearchParams(window.location.search);
+        const file = urlParams.get('file');
+        const page = urlParams.get('page');
+        let src = file+"#page="+page;
+        iframe.src = src;
+    </script>
+</body>
+</html>
